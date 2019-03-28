@@ -1,0 +1,13 @@
+$cor-fundo: rgba(120, 20 , 6, 0.8);
+
+.pai{
+    width: 25%;
+    height: 500px;
+    background-color: $cor-fundo; 
+
+    &__filho{
+        width: 25%;
+        height: 25%;
+        background-color: aliceblue;
+    }
+}

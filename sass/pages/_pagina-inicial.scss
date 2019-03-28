@@ -1,0 +1,77 @@
+.cabecalho-home{
+    background-color: #000;
+    background: url('../_img/cabecalho-home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0px 50px 0px;
+
+    &__titulo{
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    
+    &__role{
+        display: none;
+    }
+
+    @media(min-width: $breakpoint-md){
+        background-image: url("../_img/cabecalho-home-bg-md.jpg");
+    }
+
+    @media(min-width: $breakpoint-lg){
+        height: 100vh;
+        &__titulo{
+            font-size: 60px;
+            margin-top: 250px;
+        }
+
+        &__subtitulo{
+            font-size: 22px;
+        }
+
+
+        &__role{
+            display: block;
+            position: absolute;
+            background-image: url("../_img/icone-mouse.png");
+            background-repeat: no-repeat;
+            background-position: center right;
+            font-size: 20px;
+            text-align: left;
+            line-height: 2;
+            color: #fff;
+            bottom: 20px;
+            left: 50%;
+            width: 195px;
+            height: 46px;
+            margin-left: -97.5px;
+            text-decoration: none;
+        }
+    }
+
+    @media(min-width: $breakpoint-xl){
+        background-image: url("../_img/cabecalho-home-bg-xl.jpg");
+    }
+}
+
+.home__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        margin: auto;
+        margin-top: 15px;
+        background-color: $cor-principal;
+    }
+    
+    &--branco::after{
+        background-color: #fff;
+    }
+}
